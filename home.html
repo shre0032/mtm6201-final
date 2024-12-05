@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sudip Portfolio</title>
+</head>
+<body>
+
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Xtha</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Portfolio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        
+        <div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()" aria-label="Open navigation menu"></i>
+            <div class="dropdown" aria-hidden="true">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()" aria-label="Close navigation menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section>
+            <div class="main-container">
+                <div class="home-image" data-aos="zoom-in-right" data-aos-duration="3000">
+                    <picture>
+                        <source srcset="images/profile-image.png" media="(max-width: 768px)" sizes="100vw">
+                        <source srcset="images/profile-image.png" sizes="50vw">
+                        <img src="images/profile-image.png" alt="Profile picture of Sudip">
+                    </picture>
+                    
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">Hey I'm <span>Sudip</span></h1>
+                    <h2 class="typing-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">I'm a <span></span></h2>
+                    <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="800">I'm a Developer, Designer, Photographer, and 
+                        Bug Hunter, blending creativity and technical
+                        skills to craft engaging digital experiences and 
+                        uncover hidden vulnerabilities.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="900" aria-label="Visit LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.github.com/" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="950" aria-label="Visit GitHub profile"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1000" aria-label="Visit Facebook profile"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.discord.com/" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1050" aria-label="Visit Discord profile"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+                        <button aria-label="Hire me button">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="social" aria-label="Footer social media links">
+            <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.github.com/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="contact.html">FAQ</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+        </ul>
+        <p class="copyright">
+            &copy; Sudip Shrestha | All Rights Reserved
+        </p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-400px)";
+        }
+    </script>
+</body>
+</html>
