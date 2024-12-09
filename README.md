@@ -75,5 +75,5 @@ I followed WCAG guidelines by using appropriate `aria` roles, semantic HTML, and
 
 ## How to Run the Project
 1. Clone the repository:
-   ```bash
+   ```bash( https://github.com/shre0032/mtm6201-final.git )
  
